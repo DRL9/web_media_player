@@ -1,17 +1,17 @@
 {
-	"folders": [
-		{
-			"name": "✨ web_media_player",
-			"path": "."
-		},
-		{
-			"name": "🚀 backend",
-			"path": "packages/backend"
-		},
-		{
-			"name": "🚀 frontend",
-			"path": "packages/frontend"
-		}
-	],
-	"settings": {}
+  "folders": [
+    {
+      "name": "✨ web_media_player",
+      "path": "."
+    },
+    {
+      "name": "🚀 backend",
+      "path": "packages/backend"
+    },
+    {
+      "name": "🚀 frontend",
+      "path": "packages/frontend"
+    }
+  ],
+  "settings": {}
 }
