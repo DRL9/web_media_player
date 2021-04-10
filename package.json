@@ -4,6 +4,8 @@
   "description": "包含前后端的媒体播放器",
   "main": "index.js",
   "scripts": {
+    "start": "lerna run start --stream",
+    "bootstrap": "lerna bootstrap",
     "lint": "eslint --cache --fix --ext .js,.jsx,.vue ./src ./test",
     "test": "echo \"Error: no test specified\" && exit 1"
   },

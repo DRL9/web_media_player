@@ -15,7 +15,7 @@
 <script>
 import Aplayer from 'vue-aplayer';
 import axios from 'axios';
-const url = 'http://192.168.31.246:8089';
+const url = `http://${process.env.VUE_APP_HOST}:8089`;
 export default {
   components: {
     Aplayer,
