@@ -10,7 +10,7 @@ app.use(cors());
 app.use(logger());
 const PORT = 8089;
 
-const audioDir = './audios';
+const audioDir = '/home/yuanjun/Music/zard';
 
 const staticApp = new Koa().use(koaStatic(audioDir));
 const apiApp = new Koa().use(handleApi);
@@ -24,7 +24,7 @@ app.use(mount('/api', apiApp));
 async function handleApi(ctx) {
   switch (ctx.path) {
     case '/list':
-      const audioFileNames = await fs.promises.readdir(audioDir);
+      const audioFileNames = (await fs.promises.readdir(audioDir)).filter(f => f.endsWith('mp3'));
       ctx.response.type = 'application/json';
       ctx.body = JSON.stringify(
         audioFileNames.map(file => ({
