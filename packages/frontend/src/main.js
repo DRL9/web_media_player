@@ -3,6 +3,9 @@ import App from './App.vue';
 import router from './router';
 import store from './store';
 import ElementUI from 'element-ui';
+import VueCompositionAPI from '@vue/composition-api';
+
+Vue.use(VueCompositionAPI);
 
 Vue.use(ElementUI);
 
